@@ -1,0 +1,8 @@
+.button-bar {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button-bar button {
+  height: 100%;
+}

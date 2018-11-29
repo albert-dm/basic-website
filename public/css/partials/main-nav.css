@@ -1,0 +1,20 @@
+.main-nav {
+  background-color: var(--primary);
+  height: var(--nav-height);
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-nav .button-bar {
+  height: var(--nav-height);
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+
+.main-nav .button-bar button {
+  border: none;
+}

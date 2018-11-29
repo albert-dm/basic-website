@@ -1,0 +1,13 @@
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--general-dark);
+  text-align: center;
+  padding: 3px 5px;
+  border: solid thin;
+}
+button:hover {
+  background-color: var(--primary-dark);
+  color: var(--general-light);
+}
