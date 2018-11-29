@@ -1,4 +1,4 @@
-.main-nav {
+#main-nav {
   background-color: var(--primary);
   height: var(--nav-height);
   width: 100%;
@@ -6,15 +6,26 @@
   position: fixed;
   top: 0;
   left: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--general-dark);
+  font-size: 15px;
+  overflow: hidden;
 }
 
-.main-nav .button-bar {
+#main-nav .logo {
+  margin-right: 20px;
+}
+
+#main-nav .button-bar {
   height: var(--nav-height);
   position: absolute;
-  right: 0;
-  padding-right: 20px;
+  right: 20px;
 }
 
-.main-nav .button-bar button {
+#main-nav .button-bar button {
   border: none;
+  height: var(--nav-height);
 }

@@ -10,7 +10,15 @@
     <% include partials/main-nav %>
     <div id="content">
       <% include pages/cover %>
+      <% include pages/about %>
+      <% include pages/products %>
     </div>
     <% include partials/footer %>
   </body>
+  <script>
+    var mainNav = document.getElementById('main-nav');
+    window.onscroll = function(){
+      mainNav.classList.add('elevated');
+    }
+  </script>
 </html>
