@@ -1,5 +1,12 @@
 <nav id="main-nav">
-    <img class="logo" src="img/logo.svg" alt="" width="50px" height="50px">
-    <%= title %>
-    <% include ../components/button-bar %>
+    <div class="trademark" onclick="location.href='#cover'">
+        <img class="logo" src="img/logo.svg" alt="" width="50px" height="50px">
+        <%= title %>
+    </div>
+    <div id="nav-menu" class="button-bar"  onclick="navMenu.classList.remove('show');">
+        <% mainNav.forEach( link => { %>
+            <button type="button" onclick="location.href='<%= link.route %>'"><%= link.label %></button>
+        <% }) %>
+    </div>
+    <button class="menu-button" type="button" onclick="navMenu.classList.toggle('show');"><i class="fas fa-bars"></i></button>
 </nav>

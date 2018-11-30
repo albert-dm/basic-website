@@ -1,6 +1,19 @@
-<div id="products" class="page">
-    <h1><%= products.title %></h1>
+<div id="products" class="page horizontal-list">
     <div class="page-content">
-        <%- products.content %>
+        <h1><%= products.title %></h1>
+        <div class="content">
+            <%- products.content %>
+        </div>
+        <div class="list">
+            <% products.list.forEach( product => { %>
+                <div class="item">
+                    <h1><a href="<%= product.route %>"><%= product.title %></a></h1>
+                    <a href="<%= product.route %>"><img src="<%= product.image %>" alt=""></a>
+                    <div class="description">
+                        <%= product.description %>
+                    </div>
+                </div>
+            <% }) %>
+        </div>        
     </div>
 </div>

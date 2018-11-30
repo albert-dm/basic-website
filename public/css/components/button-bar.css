@@ -3,6 +3,7 @@
   align-items: center;
 }
 
-.button-bar button {
+.button-bar button,
+.button-bar .btn {
   height: 100%;
 }

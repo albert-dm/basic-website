@@ -1,0 +1,24 @@
+.text-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-image.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-image .page-content {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-nowrap;
+  justify-content: flex-start;
+}
+.text-image .page-content .content {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  padding: 15px 10px 10px 10px;
+}

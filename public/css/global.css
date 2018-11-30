@@ -1,19 +1,11 @@
-:root {
-  /* colors */
-  --primary: #6b7fd7;
-  --primary-dark: #4c2a85;
-  --primary-light: #bcedf6;
-  --general-dark: #320e3b;
-  --general-light: #ddfbd2;
-  --secondary: black;
-  --background: white;
-  /* sizes */
-  --nav-height: 70px;
-}
-
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
 }
 
 body {
@@ -21,13 +13,18 @@ body {
   min-height: 100vh;
 }
 
-a {
-  color: #00b7ff;
+.page {
+  padding: var(--nav-height) 10px 10px 10px;
+  min-height: 100vh;
+  position: relative;
 }
 
-.page {
-  padding: 15px 10px 10px 10px;
-  min-height: calc(100vh - var(--nav-height));
+.page:nth-child(even) {
+  background-color: var(--general-light);
+}
+
+.page:nth-child(odd) {
+  background-color: var(--primary-light);
 }
 
 .elevated {

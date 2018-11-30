@@ -3,4 +3,16 @@
   color: var(--secondary);
   display: grid;
   place-items: center;
+  color: var(--general-dark);
+}
+
+#cover .page-content {
+  max-width: 50vw;
+}
+
+#start-button {
+  position: absolute;
+  bottom: 10px;
+  border: none;
+  font-size: 30px;
 }

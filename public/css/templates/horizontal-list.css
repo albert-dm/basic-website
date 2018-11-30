@@ -1,0 +1,39 @@
+.horizontal-list .page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.horizontal-list .page-content h1 {
+  flex: 1;
+}
+
+.horizontal-list .page-content .content {
+  flex: 1;
+}
+
+.horizontal-list .page-content .list {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+}
+
+.horizontal-list .page-content .list .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-stretch;
+  height: 100%;
+  text-align: center;
+}
+
+.horizontal-list .page-content .list .item img {
+  max-width: 15vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

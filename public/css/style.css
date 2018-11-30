@@ -1,9 +1,15 @@
 @import url("./global.css");
 @import url("./content.css");
+@import url("./templates.css");
 @import url("./components.css");
 @import url("./partials.css");
 @import url("./pages.css");
 
 h1 {
   color: var(--general-dark);
+}
+
+a {
+  color: var(--general-dark);
+  text-decoration: none;
 }

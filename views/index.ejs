@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Simple Webpage</title>
+    <title><%= title %></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <% include customization %>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -17,8 +19,14 @@
   </body>
   <script>
     var mainNav = document.getElementById('main-nav');
-    window.onscroll = function(){
-      mainNav.classList.add('elevated');
+    var navMenu = document.getElementById('nav-menu');
+    window.onscroll = function(event){
+      if(window.scrollY > 70){
+        mainNav.classList.add('elevated');
+      }else {
+        mainNav.classList.remove('elevated');
+      }
+      
     }
   </script>
 </html>
